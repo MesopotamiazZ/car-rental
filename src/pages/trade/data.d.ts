@@ -1,0 +1,54 @@
+import BaseEntity from '@/global/BaseEntity';
+
+export interface Trade extends BaseEntity {
+	
+      	   orderId? : string ;  // 派车单号 
+         	   salesman? : string ;  // 业务员 
+         	   customerCompany? : string ;  // 用车单位 
+         	   customer? : string ;  // 用车联系人 
+         	   customerMobile? : string ;  // 联系方式 
+         	   useStartTime? : date ;  // 用车开始时间 
+         	   useEndTime? : date ;  // 用车结束时间 
+            selfCar? : string ;  // 是否外租:下拉框要求字符串编辑框才会反显
+         	   licensePlate? : string ;  // 车辆牌照 
+         	   carModel? : string ;  // 车型 
+         	   company? : string ;  // 车辆单位 
+         	   driver? : string ;  // 驾驶员 
+         	   driverMobile? : string ;  // 驾驶员联系方式 
+         	   businessTrip? : string ;  // 业务行程 
+         	   businessTripRemark? : string ;  // 业务行程备注 
+         	   num? : number ;  // 台数 
+         	   days? : number ;  // 出车天数 
+         	   numDays? : number ;  // 总台数 
+         	   toll? : number ;  // 过路费 
+         	   parkingFee? : number ;  // 停车费 
+         	   etcFee? : number ;  // ect费用 
+         	   timeout? : number ;  // 超时长 
+         	   timeoutFee? : number ;  // 超时费 
+         	   meals1? : number ;  // 驾驶员餐费 
+         	   meals2? : number ;  // 顾客餐费 
+         	   hotelFee? : number ;  // 住宿费 
+         	   otherFee? : number ;  // 其他费用 
+         	   oilFee? : number ;  // 油费 
+         	   snacksFee? : number ;  // 小吃费 
+         	   incidentalTax? : number ;  // 杂费税 
+         	   driverPayment? : number ;  // 驾驶员垫付 
+         	   incidentalTotal? : number ;  // 总共杂费 
+         	   totalPrice? : number ;  // 总费用 
+         	   invoiceName? : string ;  // 开票名称 
+         	   invoiceDate? : date ;  // 开票时间 
+         	   invoiceNo? : string ;  // 开票号 
+         	   invoiceRemark? : string ;  // 开票备注 
+         	   paymentDate? : date ;  // 付款时间 
+            hasPay? : string ;  // 是否付款:下拉框要求字符串编辑框才会反显
+            status? : string ;  // 状态:下拉框要求字符串编辑框才会反显
+         	   createId? : number ;  // 创建者 
+         	   modifyId? : string ;  // 更新者 
+         	   modifyTime? : date ;  // 更新时间 
+         	   timeoutFeeOut? : number ;  // 外租超时费 
+         	   totalMoney? : number ;  // 合作单位总费用 
+         	   invoiceNameWeek? : string ;  // 开票名称(周) 
+         	   invoiceDateWeek? : date ;  // 开票时间(周) 
+         	   dateYear? : string ;  // 年月 
+         	   dateDay? : number ;  // 日 
+   }
